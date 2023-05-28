@@ -25,11 +25,14 @@ export default function App() {
         {channel ? (
           <Channel
             channelUrl={channel.url}
+            renderChannelHeader={(props) => {
+              return <ChatHeader channel={channel} onBack={onBack} />
+
+            }}
             renderChatHeader={({ channel, user }) => (
               <ChatHeader channel={channel} user={user} onBack={onBack} />
             )}
-            renderChatItem={(props) => null}
-            renderMessageInput={(props) => null}
+
           />
         ) : (
           <ChannelList
