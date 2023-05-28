@@ -1,6 +1,6 @@
 import "./styles.css";
-import { SendBirdProvider, ChannelList, Channel } from "sendbird-uikit";
-import "sendbird-uikit/dist/index.css";
+import { SendBirdProvider, ChannelList, Channel } from "@sendbird/uikit-react";
+import "@sendbird/uikit-react/dist/index.css";
 import { useState } from "react";
 import ChatHeader from "./components/ChatHeader";
 import ChannelPreview from "./components/ChannelPreview";
@@ -10,13 +10,10 @@ export default function App() {
 
   const onChannelSelect = (_channel) => {
     setChannel(_channel);
-
-    window.history.pushState({}, _channel.name, "/" + _channel.url);
   };
 
   const onBack = () => {
     setChannel(null);
-    window.history.pushState({}, document.title, "/");
   };
 
   return (
@@ -29,10 +26,10 @@ export default function App() {
           <Channel
             channelUrl={channel.url}
             renderChatHeader={({ channel, user }) => (
-
               <ChatHeader channel={channel} user={user} onBack={onBack} />
-            )
-            }
+            )}
+            renderChatItem={(props) => null}
+            renderMessageInput={(props) => null}
           />
         ) : (
           <ChannelList
@@ -41,8 +38,7 @@ export default function App() {
                 channel={channel}
                 onChannelSelect={onChannelSelect}
               />
-            )
-            }
+            )}
           />
         )}
       </SendBirdProvider>

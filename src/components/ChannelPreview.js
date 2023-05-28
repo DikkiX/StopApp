@@ -2,7 +2,9 @@ const ChannelPreview = ({ channel, onChannelSelect }) => {
   return (
     <div
       className="channel-preview-wrapper"
-      onClick={() => onChannelSelect(channel)}
+      onClick={(e) => {
+        onChannelSelect(channel);
+      }}
     >
       <img
         className="channel-preview-cover"
@@ -21,7 +23,7 @@ const ChannelPreview = ({ channel, onChannelSelect }) => {
       <div className="channel-preview-last-message-date">
         {new Intl.DateTimeFormat("en-us", {
           month: "short",
-          day: "2-digit"
+          day: "2-digit",
         }).format(channel.lastMessage?.createdAt)}
       </div>
     </div>
