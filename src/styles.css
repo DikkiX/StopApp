@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body,
 html {
   padding: 0;
@@ -39,7 +41,7 @@ html {
 
 .channel-preview-name {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 5px; 
 }
 
 .channel-preview-last-message,
@@ -76,6 +78,18 @@ html {
   border: none;
   background: transparent;
 }
+
+
+
+.sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body.outgoing,
+.sendbird-progress-bar.sendbird-voice-message-item-body__progress-bar.progress-bar-color--primary  {
+  background-color: #97d8b2 !important;
+}
+
+/* .sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body {
+  font-family: "Open Sans", sans-serif;
+} */
+
 
 /* Override Sendbird styles if not using custom channel list preview  */
 /* .App .sendbird-channel-list,
