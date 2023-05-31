@@ -15,6 +15,7 @@ export default function App() {
             <LocationDisplay/>
             <Routes>
                 <Route path="/" element={<IndexPage/>}/>
+                <Route path="/:id" element={<IndexPage/>}/>
             </Routes>
         </BrowserRouter>
     );

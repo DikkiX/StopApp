@@ -4,9 +4,11 @@ import "@sendbird/uikit-react/dist/index.css";
 import ChatHeader from "../components/ChatHeader";
 import ChannelPreview from "../components/ChannelPreview";
 import React, {useState} from "react";
+import {useParams} from "react-router-dom";
 
 
 const IndexPage = () => {
+    const {id} = useParams();
 
     const [channel, setChannel] = useState(null);
     const onChannelSelect = (_channel) => {
@@ -18,10 +20,12 @@ const IndexPage = () => {
     };
 
 
+
+
     return(
         <div className="App">
             <SendBirdProvider
-                userId="user2"
+                userId={id}
                 appId="3CF98946-47C4-4ACD-8B9F-66D6B7237291"
             >
                 {channel ? (
