@@ -9,6 +9,7 @@ import {useParams} from "react-router-dom";
 
 const IndexPage = () => {
     const {id} = useParams();
+    console.log({id}.id);
 
     const [channel, setChannel] = useState(null);
     const onChannelSelect = (_channel) => {
@@ -21,7 +22,7 @@ const IndexPage = () => {
 
 
 
-
+if ({id}.id !== undefined){
     return(
         <div className="App">
             <SendBirdProvider
@@ -53,6 +54,17 @@ const IndexPage = () => {
             </SendBirdProvider>
         </div>
     )
+
+}else {
+    return (
+        <div>
+            <h1>
+                Je bent momenteel niet ingelogd, log opnieuw in in de applicatie.
+            </h1>
+        </div>
+    )
+}
+
 }
 
 export default IndexPage;
