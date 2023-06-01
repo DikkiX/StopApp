@@ -16,6 +16,7 @@ html {
 .App .sendbird-channel-header,
 .App .sendbird-channel-list {
   width: 100vw;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Channel list preview styles */
@@ -42,6 +43,7 @@ html {
 .channel-preview-name {
   font-weight: bold;
   margin-bottom: 5px; 
+  font-family: "Open Sans", sans-serif;
 }
 
 .channel-preview-last-message,
@@ -49,6 +51,7 @@ html {
   font-weight: 200;
   color: var(--sendbird-dark-background-300);
   font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
 }
 
 .channel-preview-last-message {
@@ -80,15 +83,19 @@ html {
 }
 
 
+.sendbird-channel-header__title__right__name.sendbird-label.sendbird-label--subtitle-2.sendbird-label--color-onbackground-1{
+  font-family: "Open Sans", sans-serif;
+}
+
 
 .sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body.outgoing,
 .sendbird-progress-bar.sendbird-voice-message-item-body__progress-bar.progress-bar-color--primary  {
   background-color: #97d8b2 !important;
 }
 
-/* .sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body {
+.sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body {
   font-family: "Open Sans", sans-serif;
-} */
+} 
 
 
 /* Override Sendbird styles if not using custom channel list preview  */
