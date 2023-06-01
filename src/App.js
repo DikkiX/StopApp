@@ -1,50 +1,22 @@
-import "./styles.css";
-import { SendBirdProvider, ChannelList, Channel } from "@sendbird/uikit-react";
-import "@sendbird/uikit-react/dist/index.css";
-import { useState } from "react";
-import ChatHeader from "./components/ChatHeader";
-import ChannelPreview from "./components/ChannelPreview";
+import "../src/styles.css";
+import IndexPage from './pages/index'
+import React from "react";
+import { Routes, Route, useLocation, BrowserRouter } from 'react-router-dom';
+
+function LocationDisplay() {
+  let location = useLocation();
+  console.log(location.pathname);
+  return null; // This component doesn't render anything
+}
 
 export default function App() {
-  const [channel, setChannel] = useState(null);
-
-  const onChannelSelect = (_channel) => {
-    setChannel(_channel);
-  };
-
-  const onBack = () => {
-    setChannel(null);
-  };
-
   return (
-    <div className="App">
-      <SendBirdProvider
-        userId="user2"
-        appId="3CF98946-47C4-4ACD-8B9F-66D6B7237291"
-      >
-        {channel ? (
-          <Channel
-            channelUrl={channel.url}
-            renderChannelHeader={(props) => {
-              return <ChatHeader channel={channel} onBack={onBack} />
-
-            }}
-            renderChatHeader={({ channel, user }) => (
-              <ChatHeader channel={channel} user={user} onBack={onBack} />
-            )}
-
-          />
-        ) : (
-          <ChannelList
-            renderChannelPreview={({ channel }) => (
-              <ChannelPreview
-                channel={channel}
-                onChannelSelect={onChannelSelect}
-              />
-            )}
-          />
-        )}
-      </SendBirdProvider>
-    </div>
+    <BrowserRouter>
+      <LocationDisplay />
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/:id" element={<IndexPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

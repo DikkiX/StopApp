@@ -82,7 +82,6 @@ html {
   background: transparent;
 }
 
-
 .sendbird-channel-header__title__right__name.sendbird-label.sendbird-label--subtitle-2.sendbird-label--color-onbackground-1{
   font-family: "Open Sans", sans-serif;
 }
@@ -96,7 +95,6 @@ html {
 .sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body {
   font-family: "Open Sans", sans-serif;
 } 
-
 
 /* Override Sendbird styles if not using custom channel list preview  */
 /* .App .sendbird-channel-list,
