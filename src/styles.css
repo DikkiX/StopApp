@@ -131,7 +131,7 @@ html {
   background-color: #97d8b2 !important;  
 } 
 
-/* Create chat icon */
+/* Icons */
 .icon-create_svg__fill,
 .icon-spinner_svg__fill,
 .icon-chat_svg__fill, 
@@ -199,7 +199,36 @@ html {
   color: #97d8b2 !important;
 }
 
-.sendbird-button__text.sendbird-label.sendbird-label--button-1.sendbird-label--color-oncontent-1:hover {
+.sendbird-button--big:hover{
+  border-color: #97d8b2 !important;
+  }
+
+.sendbird-button--big:active {
+  border-color: #97d8b2 !important;
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+.sendbird-button--big:focus{
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+.sendbird-button--primary:active {
+  background-color: #97d8b2 !important;
+}
+
+.sendbird-input .sendbird-input__input:focus {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-input .sendbird-input__input:active {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-button--secondary:hover .sendbird-button__text {
+  color: #97d8b2 !important;
+}
+
+.sendbird-button--secondary:active .sendbird-button__text {
   color: #97d8b2 !important;
 }
 
