@@ -19,7 +19,7 @@ const ChatHeader = ({ channel, onBack }) => {
         <span onClick={() => handleClick()}>{user.nickname}</span>
       </div>
       {
-        renderChannelSettings && <ChannelSettings />
+        renderChannelSettings && <ChannelSettings onClose={() => setRenderChannelSettings(false)} channelUrl={channel.url} />
       }
     </>
   )
