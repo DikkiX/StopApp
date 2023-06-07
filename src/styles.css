@@ -226,6 +226,16 @@ html {
   color: #97d8b2 !important;
 }
 
+/* Icons */
+.icon-create_svg__fill,
+.icon-spinner_svg__fill,
+.icon-chat_svg__fill, 
+.icon-play_svg__fill,
+.icon-toggleoff_svg__fill,
+.icon-toggleon_svg__fill,
+.icon-send_svg__fill{
+  fill: #97d8b2 !important;
+} 
 
 /* Override Sendbird styles if not using custom channel list preview  */
 /* .App .sendbird-channel-list,
