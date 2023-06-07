@@ -1,4 +1,5 @@
 import { SendBirdProvider, ChannelList, Channel } from "@sendbird/uikit-react";
+// import SendbirdApp from '@sendbird/uikit-react/App'
 import "../styles.css";
 import "@sendbird/uikit-react/dist/index.css";
 import ChatHeader from "../components/ChatHeader";
@@ -26,6 +27,12 @@ const IndexPage = () => {
     if ({ id }.id !== undefined) {
         return (
             <div className="App">
+                {/* <SendbirdApp
+                    // Add the two lines below.
+
+                    userId={id}
+                    appId="3CF98946-47C4-4ACD-8B9F-66D6B7237291"
+                /> */}
                 <SendBirdProvider
                     userId={id}
                     appId="3CF98946-47C4-4ACD-8B9F-66D6B7237291"
