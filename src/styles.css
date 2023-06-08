@@ -206,6 +206,23 @@ html {
   box-shadow: 0px 0px 0px 2px #97d8b2 !important;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .sendbird-modal__content {
+    width: 100% !important;
+  }
+
+  .sendbird-add-channel__rectangle {
+    width: 100% !important;
+  }
+
+
+}
+
+
+
+
+
 .sendbird-button--primary:active {
   background-color: #97d8b2 !important;
 }
@@ -225,6 +242,7 @@ html {
 .sendbird-button--secondary:active .sendbird-button__text {
   color: #97d8b2 !important;
 }
+
 
 
 /* Override Sendbird styles if not using custom channel list preview  */
