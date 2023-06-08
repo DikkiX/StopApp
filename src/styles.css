@@ -86,6 +86,10 @@ html {
   background: transparent;
 }
 
+.sendbird-icon {
+  border: #97d8b2 !important;
+}
+
 /* Profile name in chat header */
 .sendbird-channel-header__title__right__name.sendbird-label.sendbird-label--subtitle-2.sendbird-label--color-onbackground-1 {
   font-family: "Open Sans", sans-serif;
@@ -109,6 +113,12 @@ html {
   border-color: #97d8b2;
 }
 
+.sendbird-button.sendbird-button--primary.sendbird-button--big:hover {
+  background-color: #97d8b2;
+  border-color: #97d8b2;
+}
+
+
 /* Kleur van upload button in settings */
 .sendbird-label.sendbird-label--button-1.sendbird-label--color-primary {
   color: #97d8b2;
@@ -124,20 +134,7 @@ html {
   background-color: #97d8b2 !important;
 }
 
-/* Create chat icon */
-.icon-create_svg__fill {
-  fill: #97d8b2 !important;
-}
 
-/* Chat icon */
-.icon-chat_svg__fill {
-  fill: #97d8b2 !important;
-}
-
-/* Play icon */
-.icon-play_svg__fill {
-  fill: #97d8b2 !important;
-}
 
 /* Pause icon */
 .sendbird-voice-message-item-body__status-button__button__pause__inner {
@@ -145,19 +142,20 @@ html {
 }
 
 /* Voice message & progress bar */
-.sendbird-voice-message-input__controler__submit,
 .sendbird-progress-bar.sendbird-voice-message-input__indicator__progress-bar__bar.progress-bar-color--primary {
   background-color: #97d8b2 !important;
 }
 
-/* Toggle off & on icon */
-.icon-toggleoff_svg__fill,
-.icon-toggleon_svg__fill {
-  fill: #97d8b2 !important;
+.sendbird-voice-message-input__controler__submit {
+  background-color: #FFFFFF !important;
 }
 
+/* Border color of reactions */
+.sendbird-emoji-reactions__add-reaction-badge.sendbird-reaction-badge--is-add {
+  border-color: #97d8b2 !important;
+}
 
-@media only screen and (max-width: 600px) {
+<<<<<<< HEAD @media only screen and (max-width: 600px) {
   .sendbird-modal__content {
     width: 100% !important;
   }
@@ -168,6 +166,7 @@ html {
 
 
 }
+
 
 
 
