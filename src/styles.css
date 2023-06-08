@@ -157,6 +157,20 @@ html {
 }
 
 
+@media only screen and (max-width: 600px) {
+  .sendbird-modal__content {
+    width: 100% !important;
+  }
+
+  .sendbird-add-channel__rectangle {
+    width: 100% !important;
+  }
+
+
+}
+
+
+
 
 
 /* Override Sendbird styles if not using custom channel list preview  */
