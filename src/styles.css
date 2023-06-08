@@ -152,10 +152,11 @@ html {
 
 /* Border color of reactions */
 .sendbird-emoji-reactions__add-reaction-badge.sendbird-reaction-badge--is-add {
+
   border-color: #97d8b2 !important;
 }
 
-<<<<<<< HEAD @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .sendbird-modal__content {
     width: 100% !important;
   }
@@ -169,6 +170,96 @@ html {
 
 
 
+
+
+
+/* Border color of settings button */
+/* Border color of message input */
+.sendbird-channel-header__title,
+.sendbird-message-input--textarea.sendbird-message-input-text-field {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-reaction-badge--selected {
+  background-color: #97d8b27F !important;
+  border-color: #97d8b27F !important;
+}
+
+.sendbird-conversation__messages__notification {
+  background-color: #1ca4ff !important;
+}
+
+.sendbird-checkbox--checkmark {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-label--color-primary {
+  color: #97d8b2 !important;
+}
+
+.sendbird-checkbox input:focus~.sendbird-checkbox--checkmark {
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+.sendbird-checkbox input:checked~.sendbird-checkbox--checkmark {
+  background-color: #97d8b2 !important;
+  border: solid 2px #97d8b2 !important;
+}
+
+.sendbird-button.sendbird-button--secondary.sendbird-button--big:hover {
+  border-color: #97d8b2 !important;
+  color: #97d8b2 !important;
+}
+
+.sendbird-button--big:hover {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-button--big:active {
+  border-color: #97d8b2 !important;
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+.sendbird-button--big:focus {
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sendbird-modal__content {
+    width: 100% !important;
+  }
+
+  .sendbird-add-channel__rectangle {
+    width: 100% !important;
+  }
+
+
+}
+
+
+
+
+
+.sendbird-button--primary:active {
+  background-color: #97d8b2 !important;
+}
+
+.sendbird-input .sendbird-input__input:focus {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-input .sendbird-input__input:active {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-button--secondary:hover .sendbird-button__text {
+  color: #97d8b2 !important;
+}
+
+.sendbird-button--secondary:active .sendbird-button__text {
+  color: #97d8b2 !important;
+}
 
 
 
