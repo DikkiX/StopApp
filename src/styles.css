@@ -30,10 +30,12 @@ html {
 }
 
 @media screen and (max-width: 1000px) {
-    .sendbird-modal__body {
-        width: 100% !important;
+
+    .sendbird-modal__content{
+        max-width: 100% !important;
 
     }
+
 }
 
 
