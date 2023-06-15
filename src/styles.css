@@ -33,10 +33,15 @@ html {
   border-bottom: 1px solid var(--sendbird-light-background-100);
 }
 
-.channel-preview-wrapper:hover,
-.channel-preview-wrapper:active {
+.sendbird-theme--light .channel-preview-wrapper:hover,
+.sendbird-theme--light .channel-preview-wrapper:active {
   background-color: var(--sendbird-light-background-100);
-}
+} 
+
+.sendbird-theme--dark .channel-preview-wrapper:hover,
+.sendbird-theme--dark .channel-preview-wrapper:active {
+  background-color: var(--sendbird-dark-background-500);
+} 
 
 .channel-preview-cover {
   margin-inline-end: 10px;
@@ -81,168 +86,22 @@ html {
   margin: 0;
 }
 
+.sendbird-theme--dark .custom-channel-header {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  color: #d8d6d6;
+}
+
 .custom-channel-header button {
   border: none;
   background: transparent;
 }
 
-.sendbird-icon {
-  border: #97d8b2 !important;
-}
-
-/* Profile name in chat header */
-.sendbird-channel-header__title__right__name.sendbird-label.sendbird-label--subtitle-2.sendbird-label--color-onbackground-1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-
-/* Chat bubbles color */
-.sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body.outgoing,
-.sendbird-progress-bar.sendbird-voice-message-item-body__progress-bar.progress-bar-color--primary {
-  background-color: #97d8b2 !important;
-}
-
-/* Font van berichten */
-.sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* Kleur van save button in settings */
-.sendbird-button.sendbird-button--primary.sendbird-button--big {
-  background-color: #97d8b2;
-  border-color: #97d8b2;
-} 
-
-.sendbird-button.sendbird-button--primary.sendbird-button--big:hover {
-  background-color: #97d8b2;
-  border-color: #97d8b2;
-} 
-
-
-/* Kleur van upload button in settings */
-.sendbird-label.sendbird-label--button-1.sendbird-label--color-primary {
-  color: #97d8b2;
-}
-
-/* Font van settings pagina */
-.sendbird-label.sendbird-label {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* Kleur van reacties */
-.sendbird-message-content-reactions.primary {
-  background-color: #97d8b2 !important;
-}
-
-
-
-/* Pause icon */
-.sendbird-voice-message-item-body__status-button__button__pause__inner {
-  background-color: #97d8b2 !important;
-}
-
-/* Voice message & progress bar */
-.sendbird-progress-bar.sendbird-voice-message-input__indicator__progress-bar__bar.progress-bar-color--primary {
-  background-color: #97d8b2 !important;
-}
-
-.sendbird-voice-message-input__controler__submit {
-  background-color: #FFFFFF !important;
-}
-
-/* Border color of reactions */
-.sendbird-emoji-reactions__add-reaction-badge.sendbird-reaction-badge--is-add {
-  border-color: #97d8b2 !important; 
-}
-
-/* Border color of settings button */
-/* Border color of message input */
-.sendbird-channel-header__title,
-.sendbird-message-input--textarea.sendbird-message-input-text-field{
-  border-color: #97d8b2 !important; 
-}
-
-.sendbird-reaction-badge--selected {
-  background-color: #97d8b27F!important;
-  border-color: #97d8b27F !important;
-}
-
-.sendbird-conversation__messages__notification {
-  background-color: #1ca4ff !important;
-} 
-
-.sendbird-checkbox--checkmark {
-  border-color: #97d8b2 !important;
-} 
-
-.sendbird-label--color-primary {
-  color: #97d8b2 !important;
-}
-
-.sendbird-checkbox input:focus ~ .sendbird-checkbox--checkmark {
-  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
-}
-
-.sendbird-checkbox input:checked ~ .sendbird-checkbox--checkmark {
-  background-color: #97d8b2 !important;
-  border: solid 2px #97d8b2 !important;
-}
-
-.sendbird-button.sendbird-button--secondary.sendbird-button--big:hover{
-  border-color: #97d8b2 !important;
-  color: #97d8b2 !important;
-}
-
-.sendbird-button--big:hover{
-  border-color: #97d8b2 !important;
-  }
-
-.sendbird-button--big:active {
-  border-color: #97d8b2 !important;
-  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
-}
-
-.sendbird-button--big:focus{
-  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
-}
-
-.sendbird-button.sendbird-button--secondary.sendbird-button--small:hover{
-  border-color: #97d8b2 !important;
-  color: #97d8b2 !important;
-}
-
-.sendbird-button--small:hover{
-  border-color: #97d8b2 !important;
-  }
-
-.sendbird-button--small:active {
-  border-color: #97d8b2 !important;
-  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
-}
-
-.sendbird-button--small:focus{
-  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
-}
-
-.sendbird-button--primary:active {
-  background-color: #97d8b2 !important;
-}
-
-.sendbird-input .sendbird-input__input:focus {
-  border-color: #97d8b2 !important;
-}
-
-.sendbird-input .sendbird-input__input:active {
-  border-color: #97d8b2 !important;
-}
-
-.sendbird-button--secondary:hover .sendbird-button__text {
-  color: #97d8b2 !important;
-}
-
-.sendbird-button--secondary:active .sendbird-button__text {
-  color: #97d8b2 !important;
-}
 
 /* Icons */
 .icon-create_svg__fill,
@@ -256,6 +115,44 @@ html {
   fill: #97d8b2 !important;
 } 
 
+.icon-send_svg__fill{
+  fill: #FFFFFF !important;
+}
+
+:root{
+  /* Colors light */
+  --sendbird-light-primary-100: #97d8b292 !important;
+  --sendbird-light-primary-200: #97d8b2 !important;
+  --sendbird-light-primary-300: #97d8b2 !important;
+  --sendbird-light-primary-400: #86d3a6 !important;
+  --sendbird-light-primary-500: #86d3a6 !important;
+  /* Colors dark */
+  --sendbird-dark-primary-100: #97d8b2 !important;
+  --sendbird-dark-primary-200: #97d8b2 !important;
+  --sendbird-dark-primary-300: #86d3a6 !important;
+  --sendbird-dark-primary-400: #97d8b292 !important;
+  --sendbird-dark-primary-500: #97d8b2 !important;
+
+  
+  /* Fonts */
+  --sendbird-font-family-default: "Open Sans", sans-serif !important;
+  }
+
+:root {
+  --sendbird-iconbutton-color: #97d8b2 !important;
+  --sendbird-message-input-border-active: #86d3a6 !important;
+  --sendbird-selected-reaction-button-border-hover: #86d3a6 !important;
+}
+
+/* New notifications bubble */
+  .sendbird-conversation__messages__notification {
+    background-color: #1ca4ffa9 !important;
+  } 
+
+  .sendbird-theme--dark .channel-preview-name{
+    color: #d8d6d6;
+  }
+  
 /* Override Sendbird styles if not using custom channel list preview  */
 /* .App .sendbird-channel-list,
 .App .sendbird-channel-header,
