@@ -29,16 +29,6 @@ html {
   z-index: 99;
 }
 
-@media screen and (max-width: 1000px) {
-
-  .sendbird-modal__content {
-    max-width: 100% !important;
-
-  }
-
-}
-
-
 /* Channel list preview styles */
 .channel-preview-wrapper {
   max-width: 100%;
@@ -171,7 +161,7 @@ html {
   fill: #97d8b2 !important;
 }
 
-=======
+
 
 /* Pause icon */
 .sendbird-voice-message-item-body__status-button__button__pause__inner {
@@ -249,7 +239,7 @@ html {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .sendbird-modal__content {
     width: 100% !important;
   }
