@@ -38,10 +38,15 @@ html {
   border-bottom: 1px solid var(--sendbird-light-background-100);
 }
 
-.channel-preview-wrapper:hover,
-.channel-preview-wrapper:active {
+.sendbird-theme--light .channel-preview-wrapper:hover,
+.sendbird-theme--light .channel-preview-wrapper:active {
   background-color: var(--sendbird-light-background-100);
-}
+} 
+
+.sendbird-theme--dark .channel-preview-wrapper:hover,
+.sendbird-theme--dark .channel-preview-wrapper:active {
+  background-color: var(--sendbird-dark-background-500);
+} 
 
 .channel-preview-cover {
   margin-inline-end: 10px;
@@ -86,7 +91,10 @@ html {
   margin: 0;
 }
 
-.custom-channel-header button {
+.sendbird-theme--dark .custom-channel-header {
+  display: flex;
+
+  .custom-channel-header button {
   border: none;
   background: transparent;
 }
@@ -136,7 +144,70 @@ html {
 /* Font van settings pagina */
 .sendbird-label.sendbird-label {
   font-family: "Open Sans", sans-serif;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  color: #d8d6d6;
 }
+
+.custom-channel-header button {
+  border: none;
+  background: transparent;
+}
+
+
+/* Icons */
+.icon-create_svg__fill,
+.icon-spinner_svg__fill,
+.icon-chat_svg__fill, 
+.icon-play_svg__fill,
+.icon-toggleoff_svg__fill,
+.icon-toggleon_svg__fill,
+.icon-send_svg__fill,
+.icon-members_svg__fill{
+  fill: #97d8b2 !important;
+} 
+
+.icon-send_svg__fill{
+  fill: #FFFFFF !important;
+}
+
+:root{
+  /* Colors light */
+  --sendbird-light-primary-100: #97d8b292 !important;
+  --sendbird-light-primary-200: #97d8b2 !important;
+  --sendbird-light-primary-300: #97d8b2 !important;
+  --sendbird-light-primary-400: #86d3a6 !important;
+  --sendbird-light-primary-500: #86d3a6 !important;
+  /* Colors dark */
+  --sendbird-dark-primary-100: #97d8b2 !important;
+  --sendbird-dark-primary-200: #97d8b2 !important;
+  --sendbird-dark-primary-300: #86d3a6 !important;
+  --sendbird-dark-primary-400: #97d8b292 !important;
+  --sendbird-dark-primary-500: #97d8b2 !important;
+
+  
+  /* Fonts */
+  --sendbird-font-family-default: "Open Sans", sans-serif !important;
+  }
+
+:root {
+  --sendbird-iconbutton-color: #97d8b2 !important;
+  --sendbird-message-input-border-active: #86d3a6 !important;
+  --sendbird-selected-reaction-button-border-hover: #86d3a6 !important;
+}
+
+/* New notifications bubble */
+  .sendbird-conversation__messages__notification {
+    background-color: #1ca4ffa9 !important;
+  } 
+
+  .sendbird-theme--dark .channel-preview-name{
+    color: #d8d6d6;
+  }
+  
 
 /* Kleur van reacties */
 .sendbird-message-content-reactions.primary {
