@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
 
 body,
 html {
@@ -20,6 +19,12 @@ html {
 .App .sendbird-channel-list {
   width: 100vw;
   font-family: "Open Sans", sans-serif;
+}
+
+
+#sendbird-modal-root {
+  position: relative;
+  z-index: 99;
 }
 
 /* Channel list preview styles */
@@ -88,6 +93,56 @@ html {
 
 .sendbird-theme--dark .custom-channel-header {
   display: flex;
+
+  .custom-channel-header button {
+  border: none;
+  background: transparent;
+}
+
+.sendbird-icon {
+  border: #97d8b2 !important;
+}
+
+/* Profile name in chat header */
+.sendbird-channel-header__title__right__name.sendbird-label.sendbird-label--subtitle-2.sendbird-label--color-onbackground-1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* Chat bubbles color */
+.sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body.outgoing,
+.sendbird-progress-bar.sendbird-voice-message-item-body__progress-bar.progress-bar-color--primary {
+  background-color: #97d8b2 !important;
+}
+
+/* Font van berichten */
+.sendbird-message-content__middle__message-item-body.sendbird-text-message-item-body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Kleur van save button in settings */
+.sendbird-button.sendbird-button--primary.sendbird-button--big {
+
+  background-color: #97d8b2;
+  border-color: #97d8b2;
+}
+
+
+
+.sendbird-button.sendbird-button--primary.sendbird-button--big:hover {
+  background-color: #97d8b2;
+  border-color: #97d8b2;
+}
+
+
+
+/* Kleur van upload button in settings */
+.sendbird-label.sendbird-label--button-1.sendbird-label--color-primary {
+  color: #97d8b2;
+}
+
+/* Font van settings pagina */
+.sendbird-label.sendbird-label {
   font-family: "Open Sans", sans-serif;
   flex-direction: row;
   justify-content: space-between;
@@ -153,6 +208,152 @@ html {
     color: #d8d6d6;
   }
   
+
+/* Kleur van reacties */
+.sendbird-message-content-reactions.primary {
+  background-color: #97d8b2 !important;
+}
+
+
+/* Create chat icon */
+.icon-create_svg__fill {
+  fill: #97d8b2 !important;
+}
+
+/* Chat icon */
+.icon-chat_svg__fill {
+  fill: #97d8b2 !important;
+}
+
+/* Play icon */
+.icon-play_svg__fill {
+  fill: #97d8b2 !important;
+}
+
+
+
+/* Pause icon */
+.sendbird-voice-message-item-body__status-button__button__pause__inner {
+  background-color: #97d8b2 !important;
+}
+
+/* Voice message & progress bar */
+.sendbird-progress-bar.sendbird-voice-message-input__indicator__progress-bar__bar.progress-bar-color--primary {
+  background-color: #97d8b2 !important;
+}
+
+/* Toggle off & on icon */
+.icon-toggleon_svg__fill {
+  fill: #97d8b2 !important;
+}
+
+.sendbird-voice-message-input__controler__submit {
+  background-color: #FFFFFF !important;
+}
+
+/* Border color of reactions */
+.sendbird-emoji-reactions__add-reaction-badge.sendbird-reaction-badge--is-add {
+  border-color: #97d8b2 !important;
+}
+
+/* Border color of settings button */
+/* Border color of message input */
+.sendbird-channel-header__title,
+.sendbird-message-input--textarea.sendbird-message-input-text-field {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-reaction-badge--selected {
+  background-color: #97d8b27F !important;
+  border-color: #97d8b27F !important;
+}
+
+.sendbird-conversation__messages__notification {
+  background-color: #1ca4ff !important;
+}
+
+.sendbird-checkbox--checkmark {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-label--color-primary {
+  color: #97d8b2 !important;
+}
+
+.sendbird-checkbox input:focus~.sendbird-checkbox--checkmark {
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+.sendbird-checkbox input:checked~.sendbird-checkbox--checkmark {
+  background-color: #97d8b2 !important;
+  border: solid 2px #97d8b2 !important;
+}
+
+.sendbird-button.sendbird-button--secondary.sendbird-button--big:hover {
+  border-color: #97d8b2 !important;
+  color: #97d8b2 !important;
+}
+
+.sendbird-button--big:hover {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-button--big:active {
+  border-color: #97d8b2 !important;
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+.sendbird-button--big:focus {
+  box-shadow: 0px 0px 0px 2px #97d8b2 !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .sendbird-modal__content {
+    width: 100% !important;
+  }
+
+  .sendbird-add-channel__rectangle {
+    width: 100% !important;
+  }
+
+  .sendbird-user-list-item {
+    max-width: 100% !important;
+  }
+
+  #sendbird-modal-root {
+    position: relative;
+    z-index: 99;
+  }
+
+
+
+}
+
+
+
+
+
+.sendbird-button--primary:active {
+  background-color: #97d8b2 !important;
+}
+
+.sendbird-input .sendbird-input__input:focus {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-input .sendbird-input__input:active {
+  border-color: #97d8b2 !important;
+}
+
+.sendbird-button--secondary:hover .sendbird-button__text {
+  color: #97d8b2 !important;
+}
+
+.sendbird-button--secondary:active .sendbird-button__text {
+  color: #97d8b2 !important;
+}
+
 /* Override Sendbird styles if not using custom channel list preview  */
 /* .App .sendbird-channel-list,
 .App .sendbird-channel-header,
