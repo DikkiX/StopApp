@@ -286,6 +286,14 @@ html {
   color: #97d8b2 !important;
 }
 
+:root {
+  --sendbird-light-primary-100: #b3d9c2 !important;
+  --sendbird-light-primary-200: #a3d7bc !important;
+  --sendbird-light-primary-300: #97d8b2 !important;
+  --sendbird-light-primary-400: #97d8b2 !important;
+  --sendbird-light-primary-500: #97d8b2 !important;
+}
+
 /* Override Sendbird styles if not using custom channel list preview  */
 /* .App .sendbird-channel-list,
 .App .sendbird-channel-header,
